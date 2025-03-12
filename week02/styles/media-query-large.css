@@ -1,0 +1,13 @@
+@media screen and (min-width: 500px) {
+    /* Change header styling */
+    header {
+      background-color: #000; 
+      color: #fff; 
+    }
+  
+    /* Main element grid with two columns */
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
