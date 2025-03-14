@@ -1,13 +1,22 @@
-body {
+:root {
+    --main-bg-color: #f9f9f9;
+    --main-text-color: #333;
+    --header-bg-color: #4CAF50;
+    --nav-bg-color: #333;
+    --hover-bg-color: #575757;
+    --border-color: #ddd;
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
   }
   
   header {
-    background-color: #4CAF50;
+    background-color: var(--header-bg-color);
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -15,7 +24,7 @@ body {
   
   .hamburger-button {
     display: none;
-    background-color: #4CAF50;
+    background-color: var(--header-bg-color);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -28,7 +37,7 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #333;
+    background-color: var(--nav-bg-color);
     position: absolute;
     top: 60px;
     left: 0;
@@ -44,11 +53,11 @@ body {
     color: white;
     text-decoration: none;
     padding: 1rem 0;
-    border-bottom: 1px solid #575757;
+    border-bottom: 1px solid var(--hover-bg-color);
   }
   
   nav a:hover {
-    background-color: #575757;
+    background-color: var(--hover-bg-color);
   }
   
   nav a:last-child {
@@ -69,7 +78,7 @@ body {
   img {
     width: 100%;
     height: auto;
-    border: 2px solid #ddd;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
   }
   
@@ -79,7 +88,7 @@ body {
   }
   
   footer {
-    background-color: #333;
+    background-color: var(--nav-bg-color);
     color: white;
     text-align: center;
     padding: 1rem 0;
