@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener("DOMContentLoaded", () => {
     // Calculate wind chill
     const calculateWindChill = (temp, windSpeed) => {
