@@ -1,8 +1,7 @@
-/* styles.css */
 :root {
-    --primary-color: #033738; 
-    --secondary-color: #cacaca; 
-    --background-color: rgb(255, 255, 255);
+    --primary-color: #064366; 
+    --secondary-color: #c7dfff; 
+    --background-color: white;
     --text-color: black;
   }
   
@@ -14,6 +13,7 @@
     color: var(--text-color);
   }
   
+  /* Header Styling */
   header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -21,12 +21,14 @@
     padding: 1rem;
   }
   
+  /* Hero Section */
   #hero img {
     display: block;
     width: 100%;
     height: auto;
   }
   
+  /* About Section */
   #data {
     padding: 1rem;
     text-align: center;
@@ -42,6 +44,7 @@
     margin-bottom: 0.5rem;
   }
   
+  /* Weather Section */
   #weather {
     padding: 1rem;
     background-color: var(--secondary-color);
@@ -49,11 +52,18 @@
     text-align: center;
   }
   
-  #weather img {
-    width: 50px;
-    height: 50px; /* SVG styling moved to CSS */
+  #weather h2::after {
+    content: ' ⛅'; /* Decorative pseudo-element for weather icon */
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
   }
   
+  #weather img {
+    width: 50px;
+    height: 50px; /* SVG styling */
+  }
+  
+  /* Footer Styling */
   footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -61,6 +71,7 @@
     padding: 0.5rem;
   }
   
+  /* Mobile View - Default */
   @media (max-width: 599px) {
     main {
       display: flex;
@@ -72,6 +83,7 @@
     }
   }
   
+  /* Wider View */
   @media (min-width: 600px) {
     main {
       display: grid;
