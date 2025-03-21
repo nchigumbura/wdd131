@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Zimbabwe</h1>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="images/hero-default.webp" 
+           srcset="images/hero-default.webp 600w, images/hero-default.webp 1200w" 
+           sizes="(max-width: 600px) 100vw, 1200px" 
+           alt="A breathtaking view of Zimbabwe">
+    </section>
+
+    <section id="data">
+      <h2>About</h2>
+      <ul>
+        <li><strong>Area:</strong> 390,757 sq km</li>
+        <li><strong>Population:</strong> 16,000,000+</li>
+        <li><strong>Capital:</strong> Harare</li>
+        <li><strong>Languages:</strong> English, Shona, Ndebele</li>
+        <li><strong>Currency:</strong> Zimbabwean Dollar</li>
+        <li><strong>Time Zone:</strong> UTC+2</li>
+        <li><strong>Calling Code:</strong> +263</li>
+        <li><strong>Internet TLD:</strong> .zw</li>
+      </ul>
+    </section>
+
+    <section id="weather">
+      <h2>Weather</h2>
+      <p><strong>Temperature:</strong> 24°C</p>
+      <p><strong>Conditions:</strong> Sunny</p>
+      <p><strong>Wind:</strong> 10 km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill">Calculating...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Zimbabwe Page</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

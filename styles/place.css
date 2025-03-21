@@ -1,0 +1,102 @@
+/* styles.css */
+:root {
+    --primary-color: green;
+    --secondary-color: yellow;
+    --background-color: white;
+    --text-color: black;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Hero Section */
+  #hero {
+    margin: 0;
+  }
+  
+  #hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* About Section */
+  #data {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #data ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #data li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Weather Section */
+  #weather {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  #weather h2::after {
+    content: ' ⛅'; /* Pseudo-element for weather icon */
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  /* Mobile View - Default */
+  @media (max-width: 599px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #data, #weather {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Wider View */
+  @media (min-width: 600px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+  
+    #hero {
+      grid-column: span 2; /* Full width hero image */
+    }
+  
+    #data, #weather {
+      align-self: center;
+    }
+  }
+  
