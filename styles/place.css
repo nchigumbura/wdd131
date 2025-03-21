@@ -1,7 +1,7 @@
 /* styles.css */
 :root {
-    --primary-color: green;
-    --secondary-color: yellow;
+    --primary-color: #005500; /* Darker green */
+    --secondary-color: #bea71f; /* Accessible yellow */
     --background-color: white;
     --text-color: black;
   }
@@ -14,17 +14,11 @@
     color: var(--text-color);
   }
   
-  /* Header Styling */
   header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem;
-  }
-  
-  /* Hero Section */
-  #hero {
-    margin: 0;
   }
   
   #hero img {
@@ -33,7 +27,6 @@
     height: auto;
   }
   
-  /* About Section */
   #data {
     padding: 1rem;
     text-align: center;
@@ -49,7 +42,6 @@
     margin-bottom: 0.5rem;
   }
   
-  /* Weather Section */
   #weather {
     padding: 1rem;
     background-color: var(--secondary-color);
@@ -57,11 +49,11 @@
     text-align: center;
   }
   
-  #weather h2::after {
-    content: ' ⛅'; /* Pseudo-element for weather icon */
+  #weather img {
+    width: 50px;
+    height: 50px; /* SVG styling moved to CSS */
   }
   
-  /* Footer Styling */
   footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -69,7 +61,6 @@
     padding: 0.5rem;
   }
   
-  /* Mobile View - Default */
   @media (max-width: 599px) {
     main {
       display: flex;
@@ -81,7 +72,6 @@
     }
   }
   
-  /* Wider View */
   @media (min-width: 600px) {
     main {
       display: grid;
@@ -92,7 +82,7 @@
     }
   
     #hero {
-      grid-column: span 2; /* Full width hero image */
+      grid-column: span 2;
     }
   
     #data, #weather {
