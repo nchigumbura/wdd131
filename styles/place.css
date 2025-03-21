@@ -1,8 +1,8 @@
 /* styles.css */
 :root {
-    --primary-color: #005500; /* Darker green */
-    --secondary-color: #bea71f; /* Accessible yellow */
-    --background-color: white;
+    --primary-color: #033738; 
+    --secondary-color: #cacaca; 
+    --background-color: rgb(255, 255, 255);
     --text-color: black;
   }
   
