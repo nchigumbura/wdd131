@@ -4,14 +4,6 @@ yearElement.textContent = new Date().getFullYear();
 const lastModifiedElement = document.getElementById("last-modified");
 lastModifiedElement.textContent = document.lastModified;
 
-const menuButton = document.querySelector(".hamburger-button");
-const navMenu = document.querySelector("nav");
-
-menuButton.addEventListener("click", () => {
-  navMenu.classList.toggle("visible");
-  menuButton.textContent = navMenu.classList.contains("visible") ? "X" : "☰";
-});
-
 function calculateWindChill(temp, windSpeed) {
   return Math.round(
     13.12 + 0.6215 * temp - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temp * Math.pow(windSpeed, 0.16)

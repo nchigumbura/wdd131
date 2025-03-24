@@ -6,7 +6,7 @@
   --background-color: white;
   --text-color: black;
 }
-  
+
 body {
   font-family: 'Roboto', 'Poppins', sans-serif;
   margin: 0;
@@ -51,7 +51,7 @@ header {
 }
 
 #weather h2::after {
-  content: ' ⛅'; 
+  content: ' ⛅';
   margin-left: 0.5rem;
   font-size: 1.5rem;
 }
@@ -90,23 +90,19 @@ footer {
 
   #hero {
     grid-column: span 2;
-  }
-
-  #data, #weather {
-    align-self: center;
+    position: relative;
   }
 
   #weather {
     position: absolute;
-    top: 40%;
-    left: 75%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -30%);
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
+    padding: 1.5rem;
+    border-radius: 12px;
     max-width: 300px;
-  }
-
-  #hero {
-    position: relative;
+    text-align: center;
+    text-align: center;
   }
 }
