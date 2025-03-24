@@ -1,106 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap');
 
 :root {
-    --primary-color: #064366; 
-    --secondary-color: #c7dfff; 
-    --background-color: white;
-    --text-color: black;
-  }
+  --primary-color: #064366; 
+  --secondary-color: #c7dfff; 
+  --background-color: white;
+  --text-color: black;
+}
   
-  body {
-    font-family: 'Roboto', 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
+body {
+  font-family: 'Roboto', 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+#hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#data {
+  padding: 1rem;
+  text-align: center;
+}
+
+#data ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#data li {
+  margin-bottom: 0.5rem;
+}
+
+#weather {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+#weather h2::after {
+  content: ' ⛅'; 
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#weather img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+@media (max-width: 599px) {
+  main {
+    display: flex;
+    flex-direction: column;
   }
-  
-  /* Header Styling */
-  header {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 1rem;
+
+  #data, #weather {
+    margin-bottom: 1rem;
   }
-  
-  /* Hero Section */
-  #hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 1160px;
+    margin: 0 auto;
   }
-  
-  /* About Section */
-  #data {
-    padding: 1rem;
-    text-align: center;
+
+  #hero {
+    grid-column: span 2;
   }
-  
-  #data ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+  #data, #weather {
+    align-self: center;
   }
-  
-  #data li {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Weather Section */
+
   #weather {
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -30%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    max-width: 300px;
   }
-  
-  #weather h2::after {
-    content: ' ⛅'; 
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
+
+  #hero {
+    position: relative;
   }
-  
-  #weather img {
-    width: 50px;
-    height: 50px; /* SVG styling */
-  }
-  
-  /* Footer Styling */
-  footer {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 0.5rem;
-  }
-  
-  /* Mobile View*/
-  @media (max-width: 599px) {
-    main {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    #data, #weather {
-      margin-bottom: 1rem;
-    }
-  }
-  
-  /* Wider View */
-  @media (min-width: 600px) {
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      max-width: 1160px;
-      margin: 0 auto;
-    }
-  
-    #hero {
-      grid-column: span 2;
-    }
-  
-    #data, #weather {
-      align-self: center;
-    }
-  }
-  
+}
