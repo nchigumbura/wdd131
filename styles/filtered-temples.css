@@ -24,6 +24,13 @@ header {
   padding: 1rem 0;
 }
 
+nav {
+  display: flex;
+  justify-content: center; 
+  gap: 1rem;
+}
+
+
 nav a {
   color: white;
   text-decoration: none;
