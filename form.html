@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Review Form</title>
-  <link rel="stylesheet" href="styles/form.css">
-  <script src="scripts/form.js" defer></script>
+  <meta name="description" content="Submit reviews for products in a user-friendly and responsive form. Track total reviews on the confirmation page.">
+  <meta name="author" content="Nathaniel Chigumbura">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="form.js" defer></script>
 </head>
 <body>
   <header>
@@ -16,7 +19,7 @@
     <!-- Product Name -->
     <label for="product-name">Product Name:</label>
     <select id="product-name" name="product-name" required>
-      <option disabled selected>Select a Product...</option>
+      <option value="" disabled selected>Select a Product...</option>
     </select>
 
     <!-- Overall Rating -->
@@ -78,11 +81,17 @@
     <input type="text" id="user-name" name="user-name">
 
     <!-- Submit Button -->
-    <input type="submit" value="Submit Review">
+    <input type="submit" value="Submit">
   </form>
 
   <footer>
-    <p>&copy; 2025 Product Reviews</p>
+    <p>&copy; 2025 Product Reviews | Nathaniel Chigumbura | Last Modified: </p>
   </footer>
+  <script>
+    // Add last modified date dynamically
+    const footer = document.querySelector("footer p");
+    const lastModified = document.lastModified;
+    footer.innerHTML += lastModified;
+  </script>
 </body>
 </html>
