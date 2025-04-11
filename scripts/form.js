@@ -16,7 +16,7 @@ const products = [
   });
   
   const footer = document.querySelector("footer");
-const lastModified = document.lastModified;
-footer.innerHTML = `
+  const lastModified = document.lastModified;
+  footer.innerHTML = `
   &copy; 2025 Product Reviews | Nathaniel Chigumbura | Last Modified: ${lastModified}
 `;

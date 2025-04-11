@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Harare - Recommendations</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Harare Recommendations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Share Your Favorite Spot</h2>
+            <form id="recommendation-form">
+                <label for="spot">Favorite Spot:</label>
+                <input type="text" id="spot" name="spot" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="recommendations">
+                <h3>Recommendations:</h3>
+                <ul id="recommendations-list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Discover Harare</p>
+    </footer>
+</body>
+</html>

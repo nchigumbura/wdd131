@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Harare - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Discover Harare</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-layout">
+        <section id="intro">
+            <h2>Welcome to Harare!</h2>
+            <p>Discover Harare, the vibrant heart of Zimbabwe. Explore its unique attractions, local culture, and the best recommendations for an unforgettable experience.</p>
+            <div class="call-to-action">
+                <a href="attractions.html" class="button">Explore Attractions</a>
+                <a href="recommendations.html" class="button">Find Recommendations</a>
+            </div>
+        </section>
+
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-container">
+                <span id="weather-icon" class="weather-icon">☁️</span>
+                <p id="temperature" class="weather-data">Loading temperature...</p>
+                <p id="condition" class="weather-data">Loading condition...</p>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Interactive Map of Harare</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243102.0138138754!2d31.05685825!3d-17.816637600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4ee1bdddb35%3A0xa5143b9be5134f2f!2sHarare!5e0!3m2!1sen!2szw!4v1744302317260!5m2!1sen!2szw" 
+                height="400"
+                width="450"
+                style="border-radius:20px;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <section id="slideshow">
+            <h2>Discover Harare in Pictures</h2>
+            <div id="slideshow-images"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Discover Harare. All rights reserved.</p>
+    </footer>
+</body>
+</html>
