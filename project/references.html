@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Harare - References</title>
+    <title>Discover Harare - Share Your Favorites</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>References</h1>
+        <h1>Discover Harare - Share Your Favorites</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="recommendations.html">Recommendations</a></li>
-                <li><a href="references.html">References</a></li>
+                <li><a href="form.html">Submit a Place</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Image and Content Credits</h2>
-            <p>All content and images used in this project are for educational purposes. Sources: [List Your Sources Here]</p>
+        <section id="intro">
+            <h2>Share Your Insights</h2>
+            <p>Tell us about your favorite places in Harare or let us know what kind of recommendations you’re looking for. Help us make this guide even better!</p>
+        </section>
+
+        <section id="form-section">
+            <h2>Submit Your Favorites</h2>
+            <form id="submission-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="dining">Dining</option>
+                    <option value="nature">Nature</option>
+                    <option value="culture">Culture</option>
+                </select>
+
+                <label for="message">Favorite Place or Request:</label>
+                <textarea id="message" name="message" placeholder="Tell us about a place or ask for a recommendation" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="confirmation-message" style="display: none; color: green;">Thank you for your submission!</p>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Discover Harare</p>
+        <p>&copy; 2025 Discover Harare. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Harare - Attractions</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Attractions in Harare</h1>
+        <h1>Discover Harare - Must-See Attractions</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,18 +19,40 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Harare Gardens</h2>
-            <p>Relax in this beautiful green space in the heart of the city.</p>
+        <section id="intro">
+            <h2>Experience Harare’s Beauty</h2>
+            <p>Explore Zimbabwe's capital city, a perfect blend of art, history, and nature. Discover these top destinations:</p>
+            <ul>
+                <li><strong>National Gallery of Zimbabwe:</strong> Marvel at Zimbabwean art, sculptures, and dynamic exhibitions celebrating creativity.</li>
+                <li><strong>Harare Botanical Gardens:</strong> A tranquil paradise showcasing vibrant flora, perfect for relaxation and discovery.</li>
+                <li><strong>Mukuvisi Woodlands:</strong> Encounter wildlife like zebras and giraffes in this peaceful sanctuary filled with natural beauty.</li>
+                <li><strong>Chapungu Sculpture Park:</strong> Explore Zimbabwe’s stone-carving tradition in a serene outdoor art exhibit.</li>
+                <li><strong>Domboshava Rocks:</strong> Hike to ancient rock formations and admire breathtaking cave paintings with stunning views.</li>
+            </ul>
         </section>
-        <section>
-            <h2>National Gallery of Zimbabwe</h2>
-            <p>Discover incredible local art and cultural history.</p>
+
+        <section id="attractions">
+            <h2>Top Attractions</h2>
+            <div id="attractions-container"></div>
+        </section>
+
+        <section id="map">
+            <h2>Find Your Way</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243102.0138138754!2d31.05685825!3d-17.816637600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4ee1bdddb35%3A0xa5143b9be5134f2f!2sHarare!5e0!3m2!1sen!2szw!4v1744302317260!5m2!1sen!2zw" 
+                height="450"
+                width="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Discover Harare</p>
+        <p>&copy; 2025 Discover Harare. All rights reserved.</p>
     </footer>
 </body>
 </html>
